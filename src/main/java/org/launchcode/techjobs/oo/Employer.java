@@ -5,19 +5,19 @@ import java.util.Objects;
 public class Employer {
 
     private int id;
-    private static int nextId = 1;
+    private static int nextId = 1; // changing value is not stored in any employer object //
     private String value;
 
     public Employer() {
         id = nextId;
         nextId++;
     }
-
+    // Every new employer object will get a unique number now after this constructor //
     public Employer(String value) {
         this();
         this.value = value;
     }
-
+// this() is a placeholder for the variable id making this a default behavior //
     // Custom toString, equals, and hashCode methods:
 
     @Override
