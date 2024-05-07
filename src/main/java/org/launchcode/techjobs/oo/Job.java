@@ -16,21 +16,34 @@ public class Job {
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
-// constructor for unique ID //
-    public Job(int id) {
-        this.id = id;
+// We use this constructor to create a unique ID //
+    public Job() {
+        id = nextId;
+        nextId++;
     }
-// constructor for the other five fields //
+// for the love of god make sure you call the empty constructor lol, save 30 min next time lol //
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
+        this();
         this.name = name;
         this.employer = employer;
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
     }
-    // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
-    //  match.
+    // Don't change this, this allowed for the test to pass 12 out of 14 //
+// TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields match
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Job job)) return false;
+        return id == job.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
 
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
@@ -79,4 +92,5 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
+
 }
