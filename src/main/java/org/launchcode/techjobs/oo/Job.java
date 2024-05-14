@@ -4,9 +4,8 @@ import java.util.Objects;
 
 public class Job extends JobField{
 
-    private int id;
-    private static int nextId = 1;
-
+//    private int id;
+//    private static int nextId = 1;
     private String name;
     private Employer employer;
     private Location location;
@@ -18,8 +17,7 @@ public class Job extends JobField{
     //  the 'id' field.
 // We use this constructor to create a unique ID //
     public Job() {
-        id = nextId;
-        nextId++;
+       this.getId();
     }
 // for the love of god make sure you call the empty constructor lol, save 30 min next time lol //
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
@@ -37,63 +35,62 @@ public class Job extends JobField{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Job job)) return false;
-        return id == job.id;
-    }
+        if (this == o) return true;  // Check if both references point to the same object
+        if (o == null || getClass() != o.getClass()) return false;  // Check if the objects are of the same class
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
+        Job otherJob = (Job) o;  // Cast the object to Job type
+
+        // Compare the id attribute of both Job objects
+        return this.getId() == otherJob.getId();
     }
 
 
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id. // This task should be done //
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Employer getEmployer() {
-        return employer;
-    }
-
-    public Location getLocation() {
-        return location;
-    }
-
-    public PositionType getPositionType() {
-        return positionType;
-    }
-
-    public CoreCompetency getCoreCompetency() {
-        return coreCompetency;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setEmployer(Employer employer) {
-        this.employer = employer;
-    }
-
-    public void setLocation(Location location) {
-        this.location = location;
-    }
-
-    public void setPositionType(PositionType positionType) {
-        this.positionType = positionType;
-    }
-
-    public void setCoreCompetency(CoreCompetency coreCompetency) {
-        this.coreCompetency = coreCompetency;
-    }
+//    public int getId() {
+//        return this.getId();
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public Employer getEmployer() {
+//        return employer;
+//    }
+//
+//    public Location getLocation() {
+//        return location;
+//    }
+//
+//    public PositionType getPositionType() {
+//        return positionType;
+//    }
+//
+//    public CoreCompetency getCoreCompetency() {
+//        return coreCompetency;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public void setEmployer(Employer employer) {
+//        this.employer = employer;
+//    }
+//
+//    public void setLocation(Location location) {
+//        this.location = location;
+//    }
+//
+//    public void setPositionType(PositionType positionType) {
+//        this.positionType = positionType;
+//    }
+//
+//    public void setCoreCompetency(CoreCompetency coreCompetency) {
+//        this.coreCompetency = coreCompetency;
+//    }
     // Part 5 add toStringMethod //
 
 
