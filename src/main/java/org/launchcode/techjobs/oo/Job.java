@@ -126,8 +126,6 @@ public class Job {
             String coreCompetencyInfo = (coreCompetency != null && !coreCompetency.toString().isBlank()) ? coreCompetency.toString() : "Data not available";
             sb.append("Core Competency: ").append(coreCompetencyInfo).append(System.lineSeparator());
 
-//        String coreCompetencyInfo = (coreCompetency.toString() != null && !coreCompetency.toString().isBlank()) ? coreCompetency.toString() : "Data not available";
-//        sb.append("Core Competency: ").append(coreCompetencyInfo).append(System.lineSeparator());
             return sb.toString();
-           } // Do not change, this is the one mark talked about //
+           }
           }
