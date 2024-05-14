@@ -79,9 +79,18 @@ public class JobTest {
 
     @Test
     public void testToStringContainsCorrectLabelsAndData() {
-        Job job = new Job();
+        Job job = new Job("Web Developer", new Employer("LaunchCode"), new Location("STL"),
+                new PositionType("Back-end developer"), new CoreCompetency("Java"));
 
-        String expected =  "\nID: " + job.getId() + "\nName: Web Developer\nEmployer: LaunchCode\nLocation: STL\nPosition Type: Back-end developer\nCore Competency: Java\n";
+        String lineSeparator = System.lineSeparator();
+
+        String expected = lineSeparator +
+                "ID: " + job.getId() + lineSeparator +
+                "Name: Web Developer" + lineSeparator +
+                "Employer: LaunchCode" + lineSeparator +
+                "Location: STL" + lineSeparator +
+                "Position Type: Back-end developer" + lineSeparator +
+                "Core Competency: Java" + lineSeparator;
 
         String actual = job.toString();
 
@@ -93,7 +102,24 @@ public class JobTest {
 
     @Test
     public void testTestToStringHandlesEmptyField(){
-        Job job = new Job();
+        Job job = new Job("", new Employer(""), new Location(""),
+                new PositionType(""), new CoreCompetency(""));
+
+        String jobString = job.toString();
+
+        String lineSeparator = System.lineSeparator();
+
+
+        String expected =  lineSeparator +
+                "ID: " + job.getId() + lineSeparator +
+                "Name: Data not available" + lineSeparator +
+                "Employer: Data not available" + lineSeparator +
+                "Location: Data not available" + lineSeparator +
+                "Position Type: Data not available" + lineSeparator +
+                "Core Competency: Data not available" + lineSeparator;
+
+        assertEquals(expected, jobString);
+
     }
 
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="refactored code to use the line separator to pass my own test">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Testing to see what test pass on this commit for test 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
@@ -93,40 +93,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.JobTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testJobConstructorSetsAllFields.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testJobsForEquality.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testSettingJobId.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFive.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFive.testTestToStringHandlesEmptyFieldExists.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFive.testToStringHandlesEmptyField.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFour.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskFour.testTestJobsForEqualityExists.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskThree (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskThree.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'org.launchcode.techjobs.oo'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.techjobs-oo-java-graded-17 [build].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.JobTest.executor": "Run",
+    "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
+    "Gradle.JobTest.testJobsForEquality.executor": "Run",
+    "Gradle.JobTest.testSettingJobId.executor": "Run",
+    "Gradle.JobTest.testTestToStringHandlesEmptyField.executor": "Run",
+    "Gradle.JobTest.testToStringContainsCorrectLabelsAndData.executor": "Debug",
+    "Gradle.JobTest.testToStringStartsAndEndsWithNewLine.executor": "Run",
+    "Gradle.TestTaskFive.executor": "Run",
+    "Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists.executor": "Run",
+    "Gradle.TestTaskFive.testTestToStringHandlesEmptyFieldExists.executor": "Run",
+    "Gradle.TestTaskFive.testTestToStringStartsAndEndsWithNewLineExists.executor": "Run",
+    "Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData.executor": "Run",
+    "Gradle.TestTaskFive.testToStringHandlesEmptyField.executor": "Run",
+    "Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor": "Run",
+    "Gradle.TestTaskFour.executor": "Run",
+    "Gradle.TestTaskFour.testTestJobsForEqualityExists.executor": "Run",
+    "Gradle.TestTaskThree (1).executor": "Run",
+    "Gradle.TestTaskThree.executor": "Run",
+    "Gradle.TestTaskTwo.executor": "Run",
+    "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
+    "Gradle.techjobs-oo-java-graded-17 [build].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Gradle.JobTest.testToStringContainsCorrectLabelsAndData">
+}]]></component>
+  <component name="RunManager">
+    <configuration name="JobTest.testTestToStringHandlesEmptyField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testTestToStringHandlesEmptyField&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="JobTest.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -141,30 +168,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringContainsCorrectLabelsAndData&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="JobTest.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testToStringStartsAndEndsWithNewLine&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -199,7 +202,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskFive.testToStringStartsAndEndsWithNewLine" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive.testToStringContainsCorrectLabelsAndData" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -212,7 +215,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testToStringStartsAndEndsWithNewLine&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive.testToStringContainsCorrectLabelsAndData&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -258,20 +261,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.JobTest.testTestToStringHandlesEmptyField" />
       <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
+      <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
       <item itemvalue="Gradle.techjobs-oo-java-graded-17 [build]" />
       <item itemvalue="Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" />
-      <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
-      <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JobTest.testTestToStringHandlesEmptyField" />
         <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
-        <item itemvalue="Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" />
-        <item itemvalue="Gradle.JobTest.testToStringStartsAndEndsWithNewLine" />
         <item itemvalue="Gradle.techjobs-oo-java-graded-17 [build]" />
-        <item itemvalue="Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine" />
+        <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
+        <item itemvalue="Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715658541039</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Testing to see what test pass on this commit for test 5">
+      <option name="closed" value="true" />
+      <created>1715711729972</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715711729972</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -349,7 +360,8 @@
     <MESSAGE value="Task 4 complete" />
     <MESSAGE value="Changed the line separator" />
     <MESSAGE value="refactored code to use the line separator to pass my own test" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored code to use the line separator to pass my own test" />
+    <MESSAGE value="Testing to see what test pass on this commit for test 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing to see what test pass on this commit for test 5" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
