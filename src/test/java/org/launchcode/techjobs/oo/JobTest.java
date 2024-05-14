@@ -62,6 +62,9 @@ public class JobTest {
         // initiate the object to test //
         String lineSeparator = lineSeparator();
 
+        String actual = job.toString();
+        assertTrue(actual.startsWith(lineSeparator));
+
         String expected =  System.lineSeparator() +
                 "ID: " + job.getId() + System.lineSeparator() +
                 "Name: " + job.getName() + System.lineSeparator() +
@@ -70,10 +73,28 @@ public class JobTest {
                 "Position Type: " + job.getPositionType()+ System.lineSeparator() +
                 "Core Competency: " + job.getCoreCompetency() + System.lineSeparator() +
                 System.lineSeparator();
-                String actual = job.toString();
-                assertTrue(actual.startsWith(lineSeparator));
+
     } // Method Passes do not change, this is the one Mark was talking about! //
 
+
+    @Test
+    public void testToStringContainsCorrectLabelsAndData() {
+        Job job = new Job();
+
+        String expected =  "\nID: " + job.getId() + "\nName: Web Developer\nEmployer: LaunchCode\nLocation: STL\nPosition Type: Back-end developer\nCore Competency: Java\n";
+
+        String actual = job.toString();
+
+        // Assert that the actual result matches the expected format
+        assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    public void testTestToStringHandlesEmptyField(){
+        Job job = new Job();
+    }
 
 
 }
