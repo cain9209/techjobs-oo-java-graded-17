@@ -42,6 +42,7 @@ public class TestTaskSix extends AbstractTest {
 
     }
 
+
     @Test
     public void testCoreCompetencyExtendsJobField() {
 

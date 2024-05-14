@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Testing to see what test pass on this commit for test 5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Test 6 passes for now before refactoring the code">
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskSix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/TestTaskSix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +110,7 @@
     "Gradle.TestTaskFive.testToStringStartsAndEndsWithNewLine.executor": "Run",
     "Gradle.TestTaskFour.executor": "Run",
     "Gradle.TestTaskFour.testTestJobsForEqualityExists.executor": "Run",
+    "Gradle.TestTaskSix.executor": "Run",
     "Gradle.TestTaskThree (1).executor": "Run",
     "Gradle.TestTaskThree.executor": "Run",
     "Gradle.TestTaskTwo.executor": "Run",
@@ -129,7 +129,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.techjobs-oo-java-graded-17 [build]">
     <configuration name="JobTest.testTestToStringHandlesEmptyField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -270,9 +270,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.techjobs-oo-java-graded-17 [build]" />
         <item itemvalue="Gradle.JobTest.testTestToStringHandlesEmptyField" />
         <item itemvalue="Gradle.JobTest.testToStringContainsCorrectLabelsAndData" />
-        <item itemvalue="Gradle.techjobs-oo-java-graded-17 [build]" />
         <item itemvalue="Gradle.TestTaskFive.testToStringContainsCorrectLabelsAndData" />
         <item itemvalue="Gradle.TestTaskFive.testTestToStringContainsCorrectLabelsAndDataExists" />
       </list>
@@ -351,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715711729972</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Test 6 passes for now before refactoring the code">
+      <option name="closed" value="true" />
+      <created>1715713624815</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715713624815</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -361,7 +369,8 @@
     <MESSAGE value="Changed the line separator" />
     <MESSAGE value="refactored code to use the line separator to pass my own test" />
     <MESSAGE value="Testing to see what test pass on this commit for test 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing to see what test pass on this commit for test 5" />
+    <MESSAGE value="Test 6 passes for now before refactoring the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 6 passes for now before refactoring the code" />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
