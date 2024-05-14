@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Test 6 passes for now before refactoring the code">
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Refactoring the code is going well.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/JobField.java" afterDir="false" />
@@ -131,7 +131,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.techjobs-oo-java-graded-17 [build]">
     <configuration name="JobTest.testTestToStringHandlesEmptyField" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -369,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715713759860</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactoring the code is going well.">
+      <option name="closed" value="true" />
+      <created>1715715131667</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715715131667</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -380,7 +388,8 @@
     <MESSAGE value="refactored code to use the line separator to pass my own test" />
     <MESSAGE value="Testing to see what test pass on this commit for test 5" />
     <MESSAGE value="Test 6 passes for now before refactoring the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 6 passes for now before refactoring the code" />
+    <MESSAGE value="Refactoring the code is going well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring the code is going well." />
   </component>
   <component name="WfRunsListSearchHistory"><![CDATA[{
   "history": [
