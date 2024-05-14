@@ -24,11 +24,13 @@ public class Job {
 // for the love of god make sure you call the empty constructor lol, save 30 min next time lol //
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this();
-        this.name = name;
-        this.employer = employer;
-        this.location = location;
-        this.positionType = positionType;
-        this.coreCompetency = coreCompetency;
+        this.name = name; // not an object //
+        this.employer = employer; // objects need .toStringMethods and or .to...Methods //
+        this.location = location; // objects need .toStringMethods and or .to...Methods //
+        this.positionType = positionType; // objects need .toStringMethods and or .to...Methods //
+        this.coreCompetency = coreCompetency; // objects need .toStringMethods and or .to...Methods //
+
+
     }
     // Don't change this, this allowed for the test to pass 12 out of 14 //
 // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields match
@@ -99,12 +101,33 @@ public class Job {
     public String toString() {
             StringBuilder sb = new StringBuilder();
             sb.append(System.lineSeparator());
-            sb.append("ID: " + id).append(System.lineSeparator());
-            sb.append("Name: " + name).append(System.lineSeparator());
-            sb.append("Employer: " + employer).append(System.lineSeparator());
-            sb.append("Location: " + location).append(System.lineSeparator());
-            sb.append("Position Type: " + positionType).append(System.lineSeparator());
-            sb.append("Core Competency: " + coreCompetency).append(System.lineSeparator());
+
+        if (id != 0) {
+            sb.append("ID: ").append(id).append(System.lineSeparator());
+        } else {
+            sb.append("ID: Data not available").append(System.lineSeparator());
+        }
+
+            // Append Name with "Data not available" handling
+           String nameInfo = (name != null && !name.isEmpty()) ? name : "Data not available";
+            sb.append("Name: ").append(nameInfo).append(System.lineSeparator());
+
+            String employerInfo = (employer != null && !employer.toString().isBlank()) ? employer.toString() : "Data not available";
+            sb.append("Employer: ").append(employerInfo).append(System.lineSeparator());
+
+             // Handle Location field
+            String locationInfo = (location != null && !location.toString().isBlank()) ? location.toString() : "Data not available";
+            sb.append("Location: ").append(locationInfo).append(System.lineSeparator());
+
+            // Handle Position Type field
+            String positionTypeInfo = (positionType != null && !positionType.toString().isBlank()) ? positionType.toString() : "Data not available";
+            sb.append("Position Type: ").append(positionTypeInfo).append(System.lineSeparator());
+
+            String coreCompetencyInfo = (coreCompetency != null && !coreCompetency.toString().isBlank()) ? coreCompetency.toString() : "Data not available";
+            sb.append("Core Competency: ").append(coreCompetencyInfo).append(System.lineSeparator());
+
+//        String coreCompetencyInfo = (coreCompetency.toString() != null && !coreCompetency.toString().isBlank()) ? coreCompetency.toString() : "Data not available";
+//        sb.append("Core Competency: ").append(coreCompetencyInfo).append(System.lineSeparator());
             return sb.toString();
-        } // Do not change, this is the one mark talked about //
-}
+           } // Do not change, this is the one mark talked about //
+          }

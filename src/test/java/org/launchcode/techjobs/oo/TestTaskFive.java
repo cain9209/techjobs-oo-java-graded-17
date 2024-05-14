@@ -31,7 +31,7 @@ public class TestTaskFive extends AbstractTest {
         }
     }
 
-
+        // line separator test that will not work due to windows formating //
     @Test
     public void testToStringStartsAndEndsWithNewLine() throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         Job job = createJob("Web Developer", "LaunchCode", "StL", "Back-end developer", "Java");

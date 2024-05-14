@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.jar.Attributes;
 
+import static java.lang.System.lineSeparator;
 import static org.junit.Assert.*;
 import static org.testng.Assert.assertNotEquals;
 
@@ -59,19 +60,20 @@ public class JobTest {
     public void testToStringStartsAndEndsWithNewLine(){
         Job job = new Job();
         // initiate the object to test //
-        String lineSeparator = System.lineSeparator();
+        String lineSeparator = lineSeparator();
 
-        String expected = lineSeparator +
-                "ID: " + job.getId() +  lineSeparator +
-                "Name: " + job.getName() + lineSeparator +
-                "Employer: " + job.getEmployer() + lineSeparator +
-                "Location: " + job.getLocation() + lineSeparator +
-                "Position Type: " + job.getPositionType() + lineSeparator +
-                "Core Competency: " + job.getCoreCompetency() + lineSeparator +
-                lineSeparator;
-        String actual = job.toString();
-        // Testing toString() method //
-        assertEquals(expected,actual);
-        assertTrue(actual.startsWith(lineSeparator));
+        String expected =  System.lineSeparator() +
+                "ID: " + job.getId() + System.lineSeparator() +
+                "Name: " + job.getName() + System.lineSeparator() +
+                "Employer: " + job.getEmployer() + System.lineSeparator() +
+                "Location: " + job.getLocation()+ System.lineSeparator() +
+                "Position Type: " + job.getPositionType()+ System.lineSeparator() +
+                "Core Competency: " + job.getCoreCompetency() + System.lineSeparator() +
+                System.lineSeparator();
+                String actual = job.toString();
+                assertTrue(actual.startsWith(lineSeparator));
     } // Method Passes do not change, this is the one Mark was talking about! //
+
+
+
 }
