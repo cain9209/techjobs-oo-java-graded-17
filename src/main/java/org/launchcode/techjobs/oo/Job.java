@@ -92,5 +92,19 @@ public class Job {
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
     }
+    // Part 5 add toStringMethod //
 
+
+    @Override
+    public String toString() {
+            StringBuilder sb = new StringBuilder();
+            sb.append(System.lineSeparator());
+            sb.append("ID: " + id).append(System.lineSeparator());
+            sb.append("Name: " + name).append(System.lineSeparator());
+            sb.append("Employer: " + employer).append(System.lineSeparator());
+            sb.append("Location: " + location).append(System.lineSeparator());
+            sb.append("Position Type: " + positionType).append(System.lineSeparator());
+            sb.append("Core Competency: " + coreCompetency).append(System.lineSeparator());
+            return sb.toString();
+        } // Do not change, this is the one mark talked about //
 }

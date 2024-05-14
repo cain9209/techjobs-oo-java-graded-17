@@ -54,4 +54,24 @@ public class JobTest {
        assertFalse("Jobs with different IDs should not be equal",job1.equals(job));
     }
     // Passed all four Junit test for part 4 //
+    // Part 5 starts here //
+    @Test
+    public void testToStringStartsAndEndsWithNewLine(){
+        Job job = new Job();
+        // initiate the object to test //
+        String lineSeparator = System.lineSeparator();
+
+        String expected = lineSeparator +
+                "ID: " + job.getId() +  lineSeparator +
+                "Name: " + job.getName() + lineSeparator +
+                "Employer: " + job.getEmployer() + lineSeparator +
+                "Location: " + job.getLocation() + lineSeparator +
+                "Position Type: " + job.getPositionType() + lineSeparator +
+                "Core Competency: " + job.getCoreCompetency() + lineSeparator +
+                lineSeparator;
+        String actual = job.toString();
+        // Testing toString() method //
+        assertEquals(expected,actual);
+        assertTrue(actual.startsWith(lineSeparator));
+    } // Method Passes do not change, this is the one Mark was talking about! //
 }

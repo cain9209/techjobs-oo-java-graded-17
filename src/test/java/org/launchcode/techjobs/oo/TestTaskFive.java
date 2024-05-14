@@ -24,7 +24,6 @@ public class TestTaskFive extends AbstractTest {
     public void testTestToStringStartsAndEndsWithNewLineExists () throws ClassNotFoundException {
         Class jobTestClass = getClassByName("JobTest");
         Method testToStringStartsAndEndsWithNewLineMethod = null;
-
         try {
             testToStringStartsAndEndsWithNewLineMethod = jobTestClass.getMethod("testToStringStartsAndEndsWithNewLine");
         } catch (NoSuchMethodException e) {
