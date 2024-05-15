@@ -101,7 +101,7 @@ public class JobTest {
     }
 
     @Test
-    public void testTestToStringHandlesEmptyField(){
+    public void testToStringHandlesEmptyField(){
         Job job = new Job("", new Employer(""), new Location(""),
                 new PositionType(""), new CoreCompetency(""));
 
