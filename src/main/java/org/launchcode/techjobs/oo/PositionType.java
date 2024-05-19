@@ -4,25 +4,24 @@ import java.util.Objects;
 
 public class PositionType extends JobField {
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
+//    private int id;
+//    private static int nextId = 1;
+//    private String value;
 
-    public PositionType() {
-        id = nextId;
-        nextId++;
-    }
+//    public PositionType() {
+//        id = nextId;
+//        nextId++;
+//    }
 
     public PositionType(String value) {
-        this();
-        this.value = value;
+        super(value);
     }
 
     // TODO: Add a custom toString() method that returns the data stored in 'value'.
 // altered toString method with value only and passed the 4th test //
     @Override
     public String toString() {
-        return value;
+        return getValue();
     }
 
 
@@ -34,27 +33,27 @@ public class PositionType extends JobField {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PositionType that = (PositionType) o;
-        return id == that.id && Objects.equals(value, that.value);
+        return getId() == that.getId() && Objects.equals(getValue(), that.getValue());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, value);
+        return Objects.hash(getId(), getValue());
     }
 
 
     // Getters and Setters:
-
-    public int getId() {
-        return id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public String getValue() {
+//        return value;
+//    }
+//
+//    public void setValue(String value) {
+//        this.value = value;
+//    }
 
 }

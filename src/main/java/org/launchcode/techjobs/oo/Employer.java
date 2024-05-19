@@ -4,25 +4,26 @@ import java.util.Objects;
 
 public class Employer extends JobField{
 
-    private int id;
-    private static int nextId = 1; // changing value is not stored in any employer object //
-    private String value;
 
-    public Employer() {
-        id = nextId;
-        nextId++;
-    }
+//    private int id;
+//    private static int nextId = 1; // changing value is not stored in any employer object //
+//    private String value;
+//
+//    public Employer() {
+//        id = nextId;
+//        nextId++;
+//    }
+
     // Every new employer object will get a unique number now after this constructor //
     public Employer(String value) {
-        this();
-        this.value = value;
+        super(value);
     }
 // this() is a placeholder for the variable id making this a default behavior //
     // Custom toString, equals, and hashCode methods:
 
     @Override
     public String toString() {
-        return value;
+        return getValue();
     }
 
     @Override
@@ -38,18 +39,18 @@ public class Employer extends JobField{
         return Objects.hash(getId());
     }
 
-    // Getters and Setters:
-
-    public int getId() {
-        return id;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
+//    // Getters and Setters:
+//
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public String getValue() {
+//        return value;
+//    }
+//
+//    public void setValue(String value) {
+//        this.value = value;
+//    }
 
 }

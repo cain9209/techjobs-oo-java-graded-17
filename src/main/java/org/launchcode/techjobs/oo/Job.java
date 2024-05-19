@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class Job extends JobField{
 
-    private int id;
+    private final int id;
     private static int nextId = 1;
 
     private String name;
@@ -17,9 +17,13 @@ public class Job extends JobField{
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
 // We use this constructor to create a unique ID //
-    public Job() {
-        id = nextId;
-        nextId++;
+//    public Job() {
+//        id = nextId;
+//        nextId++;
+//    }
+    public Job(){
+        super("");
+        this.id = nextId++;
     }
 // for the love of god make sure you call the empty constructor lol, save 30 min next time lol //
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
@@ -102,13 +106,9 @@ public class Job extends JobField{
             StringBuilder sb = new StringBuilder();
             sb.append(System.lineSeparator());
 
-        if (id != 0) {
-            sb.append("ID: ").append(id).append(System.lineSeparator());
-        } else {
-            sb.append("ID: Data not available").append(System.lineSeparator());
-        }
+            sb.append("ID: ").append(getId() != 0 ? getId() : "Data not available").append(System.lineSeparator());
 
-            // Append Name with "Data not available" handling
+        // Append Name with "Data not available" handling
            String nameInfo = (name != null && !name.isEmpty()) ? name : "Data not available";
             sb.append("Name: ").append(nameInfo).append(System.lineSeparator());
 
